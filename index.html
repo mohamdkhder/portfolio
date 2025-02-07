@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo"><span>MR</span>medo</a>
+            <ul class="ul">
+                <li class="active"><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">skilles</a></li>
+                <li><a href="#">projectes</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+            <div class="social">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <i id="men" class="fa-solid fa-bars"></i>
+        </nav>
+    </header>
+    <div class="hero">
+        <div class="contener">
+            <div class="text">
+                <h1>mr medo</h1>
+                <span>wep desiner</span>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit dignissimos possimus culpa vitae
+                    fugiat, ad iusto commodi recusandae tempora quibusdam.</p>
+                    <a href="#" class="btn">click here </a>
+            </div>
+            <div class="img"><img src="img/1.png" alt=""></div>
+        </div>
+    </div>
+    <script>
+        let button = document.getElementById("men");
+        let ul = document.querySelector(".ul");
+        button.addEventListener("click", () => {
+            button.classList.toggle("fa-times");
+            ul.classList.toggle("active");
+        });
+    </script>
+</body>
+
+</html>
